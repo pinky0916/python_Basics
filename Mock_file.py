@@ -1,9 +1,1 @@
-def factorial(n):
-    # single line to find factorial
-    return 1 if (n == 1 or n == 0) else n * factorial(n - 1);
-
-
-# Driver Code
-num = 3;
-print("Factorial of", num, "is",
-      factorial(num))
+print(1200*(1+5.4/100)**2)
