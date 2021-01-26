@@ -1,4 +1,4 @@
-num=6
+num=4
 factorial=num
 mf=1
 if num<0:
