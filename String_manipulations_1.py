@@ -22,3 +22,5 @@ print('c:\doc\navin')
 print('c:\doc\\navin')
 #using raw string
 print(r'c:\'\doc\navin\t\nagjhij')
+
+print(len("varishtaja"))
