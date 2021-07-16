@@ -12,7 +12,7 @@ def emp_month(list1):
             min_hours=no_of_hours
             worst_emp=name
     return (emp_month,max_hrs,worst_emp,min_hours)
-list1 = {('Abby', 7000), ('Billy', 400), ('Cassie', 800), ('Daddy', 100)}
+list1 = [('Abby',10),('Billy',3),('Cathy',500),('D',5)]
 x,y,a,b=emp_month(list1)
 print(f'Employee of the month is {x} has {y} hours worked ')
 print(f'Worst employee of the month is {a} has {b} hours worked ')

@@ -26,7 +26,7 @@ def best_emp(work_hours):
     return  max_hrs,emp_month,min_hrs,worst_emp
 
 
-work_hours=[('Abby',10),('Billy',3000),('Cathy',500),('D',1)]
+work_hours=[('Abby',0),('Billy',3000),('Cathy',500),('D',1)]
 max_hrs,emp_month,min_hrs,worst_emp=best_emp(work_hours)
 print(f'Employee of the month is {emp_month} is with max_hrs {max_hrs}')
 print(f'Worst employee of the month is {worst_emp} is with min_hrs {min_hrs}')
