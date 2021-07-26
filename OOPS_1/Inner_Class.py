@@ -1,25 +1,31 @@
-class Student:
+#Creating objects of inner class outside of Outer class
+class College:
+    def __init__(self):
+        print("Outer class constructor")
+    def displayC(self):
+        print("Outer class Method")
 
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
-        #defining the inner class object
-        self.lap=self.Laptop()
+    class Student:
+        def __init__(self):
+            print("Inner class constructor")
+        def displayS(self):
+            print("Inner class method")
 
-    def show(self):
-        print(self.name,self.age)
+# To access Outer class
+c1=College()
+c1.displayC()
 
-#Inner class
-    class Laptop():
-       def __init__(self):
-           self.RAM='5TB'
-           self.CPU=200
 
-#Object created
-s1=Student("Alex",60)
-s2=Student("Tom",20)
+#To access inner class methods-Method 1
+s2=c1.Student()
+s2.displayS()
+print('**********Method2*******************')
 
-s1.show()
-
-# To access the inner class objects.
-print(s1.lap.CPU)
+#Method2:
+s3=College().Student()
+s3.displayS()
+#s3.displayC()  -Throws Error
+print('**********Method3*******************')
+#Method 3
+s4=College.Student()
+s4.displayS()
