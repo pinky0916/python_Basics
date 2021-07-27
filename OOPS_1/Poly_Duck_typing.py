@@ -10,5 +10,5 @@ class Cat:
 
 def all_sounds(obj):
     obj.sound()
-x=Cat()
+x=Duck()
 all_sounds(x)
